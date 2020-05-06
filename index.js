@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://rahulvk:rahul3791@cluster0-bcg54.mongodb.net/tes
 
 
 app.use(fileUpload());
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 app.use(expressEdge.engine);
 app.set('views', __dirname + '/views');
 app.use(bodyParser.json())
