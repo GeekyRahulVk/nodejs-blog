@@ -8,7 +8,7 @@ const app = new express();
 const fileUpload = require("express-fileupload");
 
 
-mongoose.connect('mongodb://localhost:27017/my-blog', {
+mongoose.connect('mongodb+srv://rahulvk:rahul3791@cluster0-bcg54.mongodb.net/test?retryWrites=true&w=majority/my-blog', {
         useNewUrlParser: true
     })
     .then(() => 'You are now connected to Mongo!')
